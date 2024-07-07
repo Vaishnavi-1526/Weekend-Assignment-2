@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #d9c1d5;
+            padding: 15px;
+            display:flex;
+            flex-direction:column;
+            justify-content: space-between;
+        }
+
+        .sidebar-top {
+            flex-grow: 1;
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            color: #000;
+            text-decoration: none;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover {
+            background-color: #b39eb5;
+        }
+        
+
+        .sidebar a img {
+            margin-right: 10px;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 15px;
+        }
+
+        .header {
+            display:inline;
+            justify-content:flex-end;
+            align-items:right;
+            background-color: #f4e1e6;
+            padding: 10px;
+            margin-left: 965px;
+            
+        }
+
+        .header h1 {
+              margin: 0%;
+        }
+
+        .header input {
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .media-sections {
+            margin-top: 20px;
+        }
+
+.media-section {
+    margin-bottom: 20px;
+}
+
+.media-section h2 {
+    background-color: #ffecb3;
+    padding: 10px;
+    margin: 0;
+}
+
+.media-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.media-grid img {
+    width: 400px;
+    height: 250px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+} 
+.profile {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.profile-pic {
+    display: block;
+    margin: 0 auto 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+}
+
+.profile-info {
+    margin-bottom: 20px;
+}
+
+.profile-field {
+    display: flex;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.profile-field label {
+    flex: 1;
+    font-weight: bold;
+}
+
+.profile-field input {
+    flex: 2;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #f2f2f2;
+}
+
+.profile-field img.edit-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.profile-buttons {
+    text-align: center;
+}
+
+.save-btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.cancel-btn {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <h2> <img src="icons8-w-64.png" alt="WORKSPACE" width="25" height="25"> Workspace</h2>
+                <a href="assi 2 pg 1.html" target="_blank"  id = "assi 2 pg 3">HOME
+                    <img src="icons8-home-48.png" alt="Home" width="24" height="24">
+                    <script type = "text/javascript">
+                        function active()
+                        {
+                            document.getElementById("assi 2 pg 1").classList.add("active");
+                        }
+                    </script>
+                
+                </a>
+                <a href="ass 2 customers.html" target="_blank"  id = "assi 2 pg 3">CUSTOMERS
+                    <img src="icons8-customers-16.png" alt="Departments" width="24" height="24">
+                    <script type = "text/javascript">
+                        function active()
+                        {
+                            document.getElementById("assi 2 customers").classList.add("active");
+                        }
+                    </script>
+    
+                <a href="ass 2 departments.html" target="_blank"  id = "assi 2 pg 3">DEPARTMENTS
+                    <img src="department_1642357.png" alt="Departments" width="24" height="24">
+                    <script type = "text/javascript">
+                        function active()
+                        {
+                            document.getElementById("assi 2 departments").classList.add("active");
+                        }
+                    </script>
+                
+                </a>
+                <a href= "ass 2 media.html" target ="_blank"  id = "assi 2 pg 4">MEDIA
+                    <img src="icons8-media-48.png" alt="Media" width="24" height="24">
+                    <script type = "text/javascript">
+                        function active()
+                        {
+                            document.getElementById("assi media").classList.add("active");
+                        }
+                    </script>
+                
+                </a>
+                
+            </div>
+            <div class="sidebar-bottom">
+                
+                    <img src="icons8-female-user-64.png" alt="My Account" width="24" height="24">
+                    MY ACCOUNT
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                
+                <input type="text" placeholder="Search in Home">
+                <img  src="icons8-search-48.png" alt="Search" width="23" height="25">
+                
+            
+            </div>
+            <br>
+            <br>
+            <div class="media-section">
+                <h2>AUDIO</h2>
+                <div class="media-grid">
+                    <audio controls>
+                        <source src="Journey(chosic.com).mp3">
+                    </audio>
+                    <br>
+                    <br>
+                    <div class="profile">
+                        <img src="images/gear-icon.png" alt="Profile Picture" class="profile-pic">
+                        <div class="profile-info">
+                            <div class="profile-field">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" value="John Doe" readonly>
+                                <img src="images/edit-icon.png" alt="Edit" class="edit-icon" onclick="editField('name')">
+                            </div>
+                            <div class="profile-field">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" value="example@gmail.com" readonly>
+                                <img src="images/edit-icon.png" alt="Edit" class="edit-icon" onclick="editField('email')">
+                            </div>
+                            <div class="profile-field">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" id="phone" value="9134837948" readonly>
+                                <img src="images/edit-icon.png" alt="Edit" class="edit-icon" onclick="editField('phone')">
+                            </div>
+                            <div class="profile-field">
+                                <label for="dob">Date Of Birth</label>
+                                <input type="text" id="dob" value="July 16, 1999" readonly>
+                                <img src="images/edit-icon.png" alt="Edit" class="edit-icon" onclick="editField('dob')">
+                            </div>
+                        </div>
+                        <div class="profile-buttons">
+                            <button class="save-btn" onclick="saveChanges()">Save</button>
+                            <button class="cancel-btn" onclick="cancelChanges()">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="scripts.js"></script>
+        </body>
+        </html>
