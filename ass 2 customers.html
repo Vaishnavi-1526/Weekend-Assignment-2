@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #d9c1d5;
+            padding: 15px;
+            display:flex;
+            flex-direction:column;
+            justify-content: space-between;
+        }
+
+        .sidebar-top {
+            flex-grow: 1;
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            color: #000;
+            text-decoration: none;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover {
+            background-color: #b39eb5;
+        }
+        
+
+        .sidebar a img {
+            margin-right: 10px;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 15px;
+        }
+
+        .header {
+            display:inline;
+            justify-content:flex-end;
+            align-items:right;
+            background-color: #f4e1e6;
+            padding: 10px;
+            margin-left: 965px;
+            
+        }
+
+        .header h1 {
+              margin: 0%;
+        }
+
+        .header input {
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        
+
+        .table-container {
+            background-color: #0be91a; 
+            padding: 2px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .table-container1 {
+            background-color:#0668b3;
+            padding: 2px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: rgb(250, 237, 239);
+        }
+
+        table, th, td {
+            border: 1px solid #160f0f;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #eeecf4;
+        }
+        
+    </style>
+</head>>
+
+        
+   
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-top">
+                
+                <h2><img src="icons8-w-64.png" alt="WORKSPACE" width="25" height="25"> Workspace
+                  
+                </h2>
+                <a href= "assi 2 pg 1.html" target ="_blank" class onclick="active()" id = "assi 2 pg 2">HOME
+                    <img src="icons8-home-48.png" alt="Home" width="24" height="24">
+                    
+                    <script type = "text/javascript">
+                        function active()
+                        {
+                            document.getElementById("assi 2 pg 1").classList.add("active");
+                        }
+                    </script>
+                
+                </a>
+            
+                 <a href= "assi 2 pg 1.html" target ="_blank" class onclick="active()" id = "assi 2 pg 3">CUSTOMERS
+                    <img src="icons8-customers-16.png" alt="Customers" width="24" height="24">
+                    <script type = "text/javascript">
+                        function active()
+                        {
+                            document.getElementById("assi 2 pg 1").classList.add("active");
+                        }
+                    </script>
+                </a>
+                <a href="assi 2 pg 2.html" target="_blank" class onclick="active()" id = "assi 2 pg 2">DEPARTMENTS
+                    <img src="department_1642357.png" alt="Departments" width="24" height="24">
+                    <script type = "text/javascript">
+                        function active()
+                        {
+                            document.getElementById("assi 2 pg 2").classList.add("active");
+                        }
+                    </script>
+                
+                </a>
+                <a href= "assi 2 pg 1.html" target ="_blank" class onclick="active()" id = "assi 2 pg 4">MEDIA
+                    <img src="icons8-media-48.png" alt="Media" width="24" height="24">
+                    <script type = "text/javascript">
+                        function active()
+                        {
+                            document.getElementById("assi 2 pg 1").classList.add("active");
+                        }
+                    </script>
+                
+                </a>
+                
+            </div>
+            <div class="sidebar-bottom">
+                <a href="#">
+                    <img src="icons8-female-user-64.png" alt="My Account" width="24" height="24">
+                    MY ACCOUNT
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                
+                <input type="text" placeholder="Search in Customers">
+                <img  src="icons8-search-48.png" alt="Search" width="23" height="25">
+                
+            
+            </div>
+            <br>
+            <br>
+        
+            <div class="table-container">
+                <h2>Customers</h2>
+                <table>
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Department ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Total Media Size</th>
+                    </tr>
+                    <tr>
+                        <td>JRYT456</td>
+                        <td>UHFSG</td>
+                        <td>John</td>
+                        <td>skadj@gmail.com</td>
+                        <td>2 GB</td>
+                    </tr>
+                    <tr>
+                        <td>JHSAG636</td>
+                        <td>ASDFJ</td>
+                        <td>Jane</td>
+                        <td>skadj@gmail.com</td>
+                        <td>0.4 GB</td>
+                    </tr>
+                    <tr>
+                        <td>ASJHSA77</td>
+                        <td>SAFEF</td>
+                        <td>Bob</td>
+                        <td>skadj@gmail.com</td>
+                        <td>200 GB</td>
+                    </tr>
+                    <tr>
+                        <td>KSAKHJ366</td>
+                        <td>AFEEE</td>
+                        <td>Mary</td>
+                        <td>skadj@gmail.com</td>
+                        <td>50 GB</td>
+                    </tr>
+                    <tr>
+                        <td>SAKJHD35</td>
+                        <td>REYER</td>
+                        <td>Karan</td>
+                        <td>skadj@gmail.com</td>
+                        <td>45 GB</td>
+                    </tr>
+                    <tr>
+                        <td>KKHUASU33</td>
+                        <td>HJHGF</td>
+                        <td>Chrissy</td>
+                        <td>skadj@gmail.com</td>
+                        <td>500 GB</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+              
+    
+        
