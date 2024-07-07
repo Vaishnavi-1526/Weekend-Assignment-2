@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workspace </title>
+    <title>Workspace Dashboard</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -58,6 +58,7 @@
             align-items: center;
             background-color: #f4e1e6;
             padding: 10px;
+            margin-left: 1050px;
         }
 
         .header h1 {
@@ -97,26 +98,26 @@
         }
 
         .stat.green {
-            background-color: #0be91a;
+            background-color:#0be91a;
         }
 
         .stat.blue {
-            background-color: #0668b3;
+            background-color:#0668b3;
         }
 
         .stat.red {
-            background-color: #cb1114;
+            background-color: #b82525;
         }
 
         .table-container {
-            background-color: #f5faf5;
-            padding: 20px;
+            background-color: #0be91a; 
+            padding: 2px;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .table-container1 {
-            background-color:#f5faf5;
-            padding: 20px;
+            background-color:#0668b3;
+            padding: 2px;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -124,64 +125,92 @@
         table {
             width: 100%;
             border-collapse: collapse;
+            background-color: rgb(250, 237, 239);
         }
 
         table, th, td {
-            border: 1px solid #ddd;
+            border: 1px solid #160f0f;
         }
 
         th, td {
             padding: 8px;
-            text-align: left;
+            text-align: center;
         }
 
         th {
-            background-color: #f2f2f2;
+            background-color: #eeecf4;
         }
-
-        #media {
-            background-color:#ac1013;
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
+        
+        .media {
+             display: flex; 
+            justify-content: space-between; 
+            width: 250px;
+            height: 200px;
         }
-
         .media div {
-            background-color: #c9cf11;
+            background-color: #ed9410;
             padding: 20px;
-            border-radius: 5px;
+            border-radius: 10px;
             text-align: center;
-            flex-grow: 1;
+            font-size: 1.5em;
+            flex: 1;
             margin: 0 10px;
+            width: 300px;
+        
         }
-    </style>
-</head>
+        </style>
+</head>      
+
 <body>
     <div class="container">
         <div class="sidebar">
             <div class="sidebar-top">
                 <h2> <img src="icons8-w-64.png" alt="WORKSPACE" width="25" height="25"> Workspace</h2>
-                <a href="#">
+                <a href="assi 2 pg 1.html" target="_blank"  id = "assi 2 pg 3">HOME
                     <img src="icons8-home-48.png" alt="Home" width="24" height="24">
-                    Home
+                    <script type = "text/javascript">
+                        function active()
+                        {
+                            document.getElementById("assi 2 pg 1").classList.add("active");
+                        }
+                    </script>
+                
                 </a>
-                <a href="#">
-                    <img src="icons8-customers-16.png" alt="Customers" width="24" height="24">
-                    Customers
-                </a>
-                <a href="#">
+                <a href="assi 2 pg 1.html" target="_blank"  id = "assi 2 pg 3">CUSTOMERS
+                    <img src="icons8-customers-16.png" alt="Departments" width="24" height="24">
+                    <script type = "text/javascript">
+                        function active()
+                        {
+                            document.getElementById("assi 2 pg 1").classList.add("active");
+                        }
+                    </script>
+    
+                <a href="assi 2 pg 1.html" target="_blank"  id = "assi 2 pg 3">DEPARTMENTS
                     <img src="department_1642357.png" alt="Departments" width="24" height="24">
-                    Departments
+                    <script type = "text/javascript">
+                        function active()
+                        {
+                            document.getElementById("assi 2 pg 1").classList.add("active");
+                        }
+                    </script>
+                
                 </a>
-                <a href="#">
+                <a href= "assi 2 pg 1.html" target ="_blank"  id = "assi 2 pg 4">MEDIA
                     <img src="icons8-media-48.png" alt="Media" width="24" height="24">
-                    Media
+                    <script type = "text/javascript">
+                        function active()
+                        {
+                            document.getElementById("assi 2 pg 1").classList.add("active");
+                        }
+                    </script>
+                
                 </a>
+                
             </div>
             <div class="sidebar-bottom">
-                <a href="#">
+                
                     <img src="icons8-female-user-64.png" alt="My Account" width="24" height="24">
-                    My Account
+                    MY ACCOUNT
                 </a>
             </div>
         </div>
@@ -189,19 +218,27 @@
             <div class="header">
                 
                 <input type="text" placeholder="Search in Home">
+                <img  src="icons8-search-48.png" alt="Search" width="23" height="25">
+                
+            
             </div>
+        
+        
+            
+            <br>
+            <br>
             <div class="stats">
                 <div class="stat green">
                     <h2>New Customers</h2>
-                    <p>24</p>
+                    <b id="abc">24</b>
                 </div>
                 <div class="stat blue">
                     <h2>Department Activity</h2>
-                    <p>434+</p>
+                    <b id="abd">434+</b>
                 </div>
                 <div class="stat red">
                     <h2>Total Media Size</h2>
-                    <p>10 TB</p>
+                    <b id="abe">10 TB</b>
                 </div>
             </div>
             <div class="table-container">
@@ -258,6 +295,8 @@
                     </tr>
                 </table>
             </div>
+            <br>
+            <br>
             <div class="table-container1">
                 <h2>Departments</h2>
                 <table>
@@ -312,30 +351,36 @@
                     </tr>
                 </table>
             </div>
-            <div class="Media">
-                <h2>Media</h2>
-                
-                <table>
-                    <tr>
-                        <th><h3>Audio</h3>
-                            <p>14TB</p></th>
-                        <th><h3>Video</h3>
-                            <p>14TB</p></th>
-                        <th><h3>Images</h3>
-                            <p>14TB</p></th>
-                        <th><h3>Files</h3>
-                            <p>14TB</p></th>
-                        
-                    </tr>
-                </table>
+            <br>
+            <caption><strong id="media"><b><h2>Media</h2></b></strong></caption>
+        <br>
 
+        <div class="media">
+        <table>
+            <div>
                 
-                    
-        
+                <h3>Audio</h3>
+                <p >14 TB</p>
             </div>
+            <div>
+                <h3>Video</h3>
+                <p>14 TB</p>
+            </div>
+            <div>
+                <h3>Images</h3>
+                <p>14 TB</p>
+            </div>
+            <div>
+                <h3>Files</h3>
+                <p>14 TB</p>
+            </div>
+        </table>
+    
         </div>
-    </div>
+    </div> 
+</div>
 </body>
-
-                
-                    
+</html>
+        
+       
+        
