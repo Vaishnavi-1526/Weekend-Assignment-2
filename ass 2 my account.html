@@ -17,7 +17,7 @@
         }
 
         .sidebar {
-            width: 200px;
+            width: 150px;
             background-color: #d9c1d5;
             padding: 15px;
             display:flex;
@@ -119,7 +119,7 @@
     background-color: #f0f0f0;
     border-radius: 5px;
 } 
-.profile {
+/*.profile {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -186,6 +186,72 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}*/
+.icon
+{
+    background-color: white; 
+    color:rgb(122, 122, 122); 
+    font-size : 30px;
+    margin-left:200px;
+    cursor : pointer;
+}
+.dp
+{
+    height : 200px;
+    width : 200px; 
+    border-radius : 10px;
+    margin-left:10px;
+    margin-top: 92px;
+}
+.input
+{
+    display : none;
+}
+.align
+{
+    margin-left: 294px;
+}
+.align label i{
+    background-color: white; 
+    color:rgb(122, 122, 122); 
+    font-size : 20px;
+    margin-left:500px;
+    cursor : pointer;
+}
+.text
+{
+    font-size: 10px;
+    color : black;
+    border : 1px solid rgb(122, 122, 122);
+    padding : 8px 8px;
+    border-radius: 12px;
+    width : 400px;
+}
+.icon1
+{
+    background-color: white; 
+    color:rgb(122, 122, 122); 
+    font-size : 30px;
+    cursor : pointer;
+}
+.text1
+{
+    font-size:20px;
+    padding : 5px 20px;
+    color : white;
+    background-color: rgb(24, 193, 184);
+    border-radius: 10px;
+    margin-left : 150px;
+    cursor: pointer;
+}
+.text2
+{
+    font-size:20px;
+    padding : 5px 20px;
+    color : white;
+    background-color: rgb(196, 188, 29);
+    border-radius: 10px;
+    cursor : pointer;
 }
         </style>
 </head>
@@ -194,7 +260,7 @@
     <div class="container">
         <div class="sidebar">
             <div class="sidebar-top">
-                <h2> <img src="icons8-w-64.png" alt="WORKSPACE" width="25" height="25"> Workspace</h2>
+                <h2> <img src="icons8-w-64.png" alt="WORKSPACE" width="20" height="25">Workspace</h2>
                 <a href="assi 2 pg 1.html" target="_blank"  id = "assi 2 pg 3">HOME
                     <img src="icons8-home-48.png" alt="Home" width="24" height="24">
                     <script type = "text/javascript">
@@ -210,7 +276,7 @@
                     <script type = "text/javascript">
                         function active()
                         {
-                            document.getElementById("assi 2 customers").classList.add("active");
+                            document.getElementById("ass 2 customers").classList.add("active");
                         }
                     </script>
     
@@ -219,7 +285,7 @@
                     <script type = "text/javascript">
                         function active()
                         {
-                            document.getElementById("assi 2 departments").classList.add("active");
+                            document.getElementById("ass 2 departments").classList.add("active");
                         }
                     </script>
                 
@@ -229,7 +295,7 @@
                     <script type = "text/javascript">
                         function active()
                         {
-                            document.getElementById("assi media").classList.add("active");
+                            document.getElementById("ass 2 media").classList.add("active");
                         }
                     </script>
                 
@@ -251,47 +317,139 @@
                 
             
             </div>
+            
             <br>
             <br>
-            <div class="media-section">
-                <h2>AUDIO</h2>
-                <div class="media-grid">
-                    <audio controls>
-                        <source src="Journey(chosic.com).mp3">
-                    </audio>
-                    <br>
-                    <br>
-                    <div class="profile">
-                        <img src="images/gear-icon.png" alt="Profile Picture" class="profile-pic">
-                        <div class="profile-info">
-                            <div class="profile-field">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" value="John Doe" readonly>
-                                <img src="images/edit-icon.png" alt="Edit" class="edit-icon" onclick="editField('name')">
-                            </div>
-                            <div class="profile-field">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" value="example@gmail.com" readonly>
-                                <img src="images/edit-icon.png" alt="Edit" class="edit-icon" onclick="editField('email')">
-                            </div>
-                            <div class="profile-field">
-                                <label for="phone">Phone Number</label>
-                                <input type="text" id="phone" value="9134837948" readonly>
-                                <img src="images/edit-icon.png" alt="Edit" class="edit-icon" onclick="editField('phone')">
-                            </div>
-                            <div class="profile-field">
-                                <label for="dob">Date Of Birth</label>
-                                <input type="text" id="dob" value="July 16, 1999" readonly>
-                                <img src="images/edit-icon.png" alt="Edit" class="edit-icon" onclick="editField('dob')">
-                            </div>
+            
+                    <div>
+                        <div>
+                            <img src = "profile.jpg" alt="dp" class = "dp stat" id="profile" >
                         </div>
-                        <div class="profile-buttons">
-                            <button class="save-btn" onclick="saveChanges()">Save</button>
-                            <button class="cancel-btn" onclick="cancelChanges()">Cancel</button>
+                        <div>
+                            <label for = "upload" class = "icon"><i class = "fa fa-fw fa-pencil"></i></label>
+                            <input type = "file" accept = "profile/jpeg , profile/jpg , profile/png" id = "upload" class = "input">
                         </div>
+                        <script>
+                            let profile = document.getElementById("profile");
+                            let input = document.getElementById("upload");
+                            input.onchange = function ()
+                            {
+                                profile.src = URL.createObjectURL(input.files[0]);
+                            }
+                        </script>
                     </div>
-                </div>
-            </div>
-            <script src="scripts.js"></script>
-        </body>
-        </html>
+                    <br>
+                    <div>
+                        <div>
+                            <h1 class = "align">Name</h1>
+                            <br>
+                            <input type="text" id = "name" value = "John Doe" class = "text align stat" readonly>
+                            <label for = "name" class = "icon1"><i class = "fa fa-fw fa-pencil" id = "edit"></i></label>
+                        </div>
+                        <script>
+                            document.getElementById("edit").addEventListener("click", function()
+                            {
+                                var usernameInput = document.getElementById("name");
+                                usernameInput.removeAttribute("readonly");
+                                usernameInput.focus();
+                                this.classList.add("input");
+                            });
+                        </script>
+                    </div>
+                    <br><br>
+                    <div>
+                        <div>
+                            <h1 class = "align">Email</h1>
+                            <br>
+                            <input type="text" id = "email" value = "example@gmail.com" class = "text align stat" readonly>
+                            <label for = "email" class = "icon1"><i class = "fa fa-fw fa-pencil" id = "edit1"></i></label>
+                        </div>
+                        <script>
+                            document.getElementById("edit1").addEventListener("click", function()
+                            {
+                                var usernameInput = document.getElementById("email");
+                                usernameInput.removeAttribute("readonly");
+                                usernameInput.focus();
+                                this.classList.add("input");
+                            });
+                        </script>
+                    </div>
+                    <br><br>
+                    <div>
+                        <div>
+                            <h1 class = "align">Phone Number</h1>
+                            <br>
+                            <input type="text" id = "phno" value = "8457940348" class = "text align stat" readonly>
+                            <label for = "phno" class = "icon1"><i class = "fa  fa-pencil" id = "edit2"></i></label>
+                        </div>
+                        <script>
+                            document.getElementById("edit2").addEventListener("click", function()
+                            {
+                                var usernameInput = document.getElementById("phno");
+                                usernameInput.removeAttribute("readonly");
+                                usernameInput.focus();
+                                this.classList.add("input");
+                            });
+                        </script>
+                    </div>
+                    <br><br>
+                    <div>
+                        <div>
+                            <h1 class = "align">Date Of Birth</h1>
+                            <br>
+                            <input type="text" id = "date" value = "July 16, 1999" class = "text align stat" readonly>
+                            <label for = "date" class = "icon1"><i class = "fa fa-fw fa-pencil" id = "edit3"></i></label>
+                        </div>
+                        <script>
+                            document.getElementById("edit3").addEventListener("click", function()
+                            {
+                                var usernameInput = document.getElementById("date");
+                                usernameInput.removeAttribute("readonly");
+                                usernameInput.focus();
+                                this.classList.add("input");
+                            });
+                        </script>
+                    </div>
+                    <br><br>
+                    <div class = "align">
+                        <button id="save" class = "text1 stat">Save</button>
+                        <button id="cancel" class = "text2 stat">Cancel</button>
+                        <script>
+                            let prof = "image.jpg";
+                            let orig1 = "John Doe";
+                            let orig2 = "example@gmail.com";
+                            let orig3 = "8457940348";
+                            let orig4 = "July 16, 1999";
+                            document.getElementById("save").addEventListener("click",function()
+                            {
+                                var input1 = document.getElementById("name");
+                                var input2 = document.getElementById("email");
+                                var input3 = document.getElementById("phno");
+                                var input4 = document.getElementById("date");
+                                input1.setAttribute("readonly",true);
+                                input2.setAttribute("readonly",true);
+                                input3.setAttribute("readonly",true);
+                                input4.setAttribute("readonly",true);
+                            });
+                            document.getElementById("cancel").addEventListener("click",function()
+                            {
+                                var input1 = document.getElementById("name");
+                                var input2 = document.getElementById("email");
+                                var input3 = document.getElementById("phno");
+                                var input4 = document.getElementById("date");
+                                var profile = document.getElementById("profile");
+                                profile.src = "profile.jpg";
+                                input1.value = orig1;
+                                input2.value = orig2;
+                                input3.value = orig3;
+                                input4.value = orig4;
+                                input1.setAttribute("readonly",true);
+                                input2.setAttribute("readonly",true);
+                                input3.setAttribute("readonly",true);
+                                input4.setAttribute("readonly",true);
+                            })
+                        </script>
+                    </div>
+                    <br><br>
+                </body>
+            </html>
