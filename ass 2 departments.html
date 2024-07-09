@@ -16,12 +16,34 @@
             display: flex;
         }
 
-        .sidebar {
-            width: 200px;
+        /*.sidebar {
+            width: 150px;
             background-color: #d9c1d5;
             padding: 15px;
             display:flex;
             flex-direction:column;
+            justify-content: space-between;
+        }
+
+        .sidebar-top {
+            flex-grow: 1;
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            color: #000;
+            text-decoration: none;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }*/
+        .sidebar {
+            width: 200px;
+            background-color: #d9c1d5;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
             justify-content: space-between;
         }
 
@@ -124,9 +146,21 @@
         th {
             background-color: #eeecf4;
         }
+        /*.next{
+            margin-right: 20px;
+        }
+        .box1{
+            display: inline-block;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+            border: 1px solid #0be91a;
+            border-radius: 10px;
+            margin-top: 500px;
+        }*/
+        
         
     </style>
-</head>>
+</head>
 
         
    
@@ -135,7 +169,8 @@
         <div class="sidebar">
             <div class="sidebar-top">
                 
-                <h2><img src="icons8-w-64.png" alt="WORKSPACE" width="25" height="25"> Workspace
+                <h2>
+                    <img src="icons8-w-64.png" alt="WORKSPACE" width="20" height="25">Workspace
                   
                 </h2>
                 <a href= "assi 2 pg 1.html" target ="_blank" class onclick="active()" id = "assi 2 pg 2">HOME
@@ -155,7 +190,7 @@
                     <script type = "text/javascript">
                         function active()
                         {
-                            document.getElementById("").classList.add("active");
+                            document.getElementById("ass 2 customers").classList.add("active");
                         }
                     </script>
                 </a>
@@ -164,7 +199,7 @@
                     <script type = "text/javascript">
                         function active()
                         {
-                            document.getElementById("assi 2 pg 2").classList.add("active");
+                            document.getElementById("ass 2 departments").classList.add("active");
                         }
                     </script>
                 
@@ -174,7 +209,7 @@
                     <script type = "text/javascript">
                         function active()
                         {
-                            document.getElementById("assi 2 pg 1").classList.add("active");
+                            document.getElementById("ass 2 media").classList.add("active");
                         }
                     </script>
                 
@@ -182,9 +217,10 @@
                 
             </div>
             <div class="sidebar-bottom">
-                <a href= "ass 2 my account.html" target ="_blank" class onclick="active()" id = "assi 2 pg 4">
-                    <img src="icons8-female-user-64.png" alt="My Account" width="24" height="24">
+                    <a href= "ass 2 my account.html" target ="_blank" class onclick="active()" id = "assi 2 pg 4">
+                    <img src="icons8-female-user-64.png" alt="My Account" width="24" height="24"> 
                     MY ACCOUNT
+                    
                 </a>
             </div>
         </div>
@@ -196,6 +232,7 @@
                 
             
             </div>
+            
             <br>
             <br>
         
@@ -253,7 +290,8 @@
             </table>
         </div>
     </div>
+                 
 </body>
 </html>   
     
-        
+    
