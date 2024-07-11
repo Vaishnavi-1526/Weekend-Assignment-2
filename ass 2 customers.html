@@ -17,7 +17,7 @@
         }
 
         .sidebar {
-            width: 150px;
+            width: 200px;
             background-color: #d9c1d5;
             padding: 15px;
             display:flex;
@@ -124,6 +124,30 @@
         th {
             background-color: #eeecf4;
         }
+        .pagination{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pagination.page-link{
+            background-color: #a569bd;
+            color: #eeecf4;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .pagination.page-number{
+            font-size: 1.2em;
+            margin: 0 10px;
+        }
+        .buttons{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
         
     </style>
 </head>
@@ -196,7 +220,7 @@
                 
             
             </div>
-            <hr>
+            
             <br>
             <br>
         
@@ -254,6 +278,13 @@
                     </tr>
                 </table>
             </div>
+            <br>
+        <br>
+        <div class = "pagination">
+            <button class = "page-link">&lt;</button>
+            <span class = "page-number">1</span>
+            <button class = "page-link">&gt;</button>
+        </div>
         </div>
     </div>
     
