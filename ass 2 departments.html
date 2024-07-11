@@ -157,6 +157,21 @@
             border-radius: 10px;
             margin-top: 500px;
         }*/
+        .pagination{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pagination.page-link{
+            background-color: #a569bd;
+            color: #eeecf4;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
         
         
     </style>
@@ -288,6 +303,14 @@
                     <td>500 GB</td>
                 </tr>
             </table>
+            
+        </div> 
+        <br>
+        <br>
+        <div class = "pagination">
+            <button class = "page-link">&lt;</button>
+            <span class = "page-number">1</span>
+            <button class = "page-link">&gt;</button>
         </div>
     </div>
                  
