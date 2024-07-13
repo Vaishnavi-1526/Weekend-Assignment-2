@@ -209,7 +209,7 @@
 }
 .align
 {
-    margin-left: 294px;
+    margin-left: 30px;
 }
 .align label i{
     background-color: white; 
@@ -252,6 +252,13 @@
     background-color: rgb(196, 188, 29);
     border-radius: 10px;
     cursor : pointer;
+}
+.edit-icon{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right:850px;
+    cursor: pointer;
 }
         </style>
 </head>
@@ -326,16 +333,18 @@
                             <img src = "profile.jpg" alt="dp" class = "dp stat" id="profile" >
                         </div>
                         <div>
-                            <label for = "upload" class = "icon"><i class = "fa fa-fw fa-pencil"></i></label>
-                            <input type = "file" accept = "profile/jpeg , profile/jpg , profile/png" id = "upload" class = "input">
+                            <input type="file" accept ="image/jpg,image/jpeg,image/png" id="upload" class="input">
+                            <img src ="pencil.png" alt = "profile" class = "edit-icon">
+                            
                         </div>
                         <script>
-                            let profile = document.getElementById("profile");
-                            let input = document.getElementById("upload");
-                            input.onchange = function ()
-                            {
-                                profile.src = URL.createObjectURL(input.files[0]);
-                            }
+                             document.querySelectorAll('.edit-icon').forEach(icon => {
+    icon.addEventListener('click', () => {
+        const input = icon.previousElementSibling;
+        input.removeAttribute('readonly');
+        input.focus();
+    });
+});
                         </script>
                     </div>
                     <br>
@@ -344,16 +353,16 @@
                             <h1 class = "align">Name</h1>
                             <br>
                             <input type="text" id = "name" value = "John Doe" class = "text align stat" readonly>
-                            <label for = "name" class = "icon1"><i class = "fa fa-fw fa-pencil" id = "edit"></i></label>
+                            <img src ="pencil.png" alt = "Edit" class = "edit-icon">
                         </div>
                         <script>
-                            document.getElementById("edit").addEventListener("click", function()
-                            {
-                                var usernameInput = document.getElementById("name");
-                                usernameInput.removeAttribute("readonly");
-                                usernameInput.focus();
-                                this.classList.add("input");
-                            });
+                           document.querySelectorAll('.edit-icon').forEach(icon => {
+    icon.addEventListener('click', () => {
+        const input = icon.previousElementSibling;
+        input.removeAttribute('readonly');
+        input.focus();
+    });
+});
                         </script>
                     </div>
                     <br><br>
@@ -362,16 +371,17 @@
                             <h1 class = "align">Email</h1>
                             <br>
                             <input type="text" id = "email" value = "example@gmail.com" class = "text align stat" readonly>
-                            <label for = "email" class = "icon1"><i class = "fa fa-fw fa-pencil" id = "edit1"></i></label>
+                            <img src ="pencil.png" alt = "Edit" class = "edit-icon">
+                            
                         </div>
                         <script>
-                            document.getElementById("edit1").addEventListener("click", function()
-                            {
-                                var usernameInput = document.getElementById("email");
-                                usernameInput.removeAttribute("readonly");
-                                usernameInput.focus();
-                                this.classList.add("input");
-                            });
+                           document.querySelectorAll('.edit-icon').forEach(icon => {
+    icon.addEventListener('click', () => {
+        const input = icon.previousElementSibling;
+        input.removeAttribute('readonly');
+        input.focus();
+    });
+});
                         </script>
                     </div>
                     <br><br>
@@ -380,16 +390,17 @@
                             <h1 class = "align">Phone Number</h1>
                             <br>
                             <input type="text" id = "phno" value = "8457940348" class = "text align stat" readonly>
-                            <label for = "phno" class = "icon1"><i class = "fa  fa-pencil" id = "edit2"></i></label>
+                            <img src ="pencil.png" alt = "Edit" class = "edit-icon">
+                            
                         </div>
                         <script>
-                            document.getElementById("edit2").addEventListener("click", function()
-                            {
-                                var usernameInput = document.getElementById("phno");
-                                usernameInput.removeAttribute("readonly");
-                                usernameInput.focus();
-                                this.classList.add("input");
-                            });
+                            document.querySelectorAll('.edit-icon').forEach(icon => {
+    icon.addEventListener('click', () => {
+        const input = icon.previousElementSibling;
+        input.removeAttribute('readonly');
+        input.focus();
+    });
+});
                         </script>
                     </div>
                     <br><br>
@@ -398,16 +409,17 @@
                             <h1 class = "align">Date Of Birth</h1>
                             <br>
                             <input type="text" id = "date" value = "July 16, 1999" class = "text align stat" readonly>
-                            <label for = "date" class = "icon1"><i class = "fa fa-fw fa-pencil" id = "edit3"></i></label>
+                            <img src ="pencil.png" alt = "Edit" class = "edit-icon">
+                            
                         </div>
                         <script>
-                            document.getElementById("edit3").addEventListener("click", function()
-                            {
-                                var usernameInput = document.getElementById("date");
-                                usernameInput.removeAttribute("readonly");
-                                usernameInput.focus();
-                                this.classList.add("input");
-                            });
+                            document.querySelectorAll('.edit-icon').forEach(icon => {
+    icon.addEventListener('click', () => {
+        const input = icon.previousElementSibling;
+        input.removeAttribute('readonly');
+        input.focus();
+    });
+});
                         </script>
                     </div>
                     <br><br>
